@@ -108,5 +108,5 @@ if __name__ == "__main__":
     with app.app_context():
         ingest_data_main()
 
-    app.run(debug=True)
+    app.run(debug=False)
 
