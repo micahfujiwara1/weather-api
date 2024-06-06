@@ -1,0 +1,17 @@
+1. I chose to use SQLite for my database and SQLAlchemy ORM for my modeling. Models.py provides the schema for the data model.
+
+2. ingest_data.py contains the code to ingest and push data to my database.
+
+3. ingest_data.py contains methods that performs data cleansing and analysis as well as pushes the transformed data to my database
+
+4. To utilize the API, navigate to 'http://localhost:5000/apidocs' to see API documentation. 
+   For unit tests, run 'python3 -m unittest test_file.py' in the terminal
+
+Extra Credit: 
+Here are the AWS tools I would utilize:
+- AWS API Gateway to deploy my REST API to expose backend HTTP endpoints
+- AWS Lambda to host my code serverlessly
+- AWS Aurora to host my database
+- AWS S3 to house wx_files and yld_files
+- AWS CloudWatch to monitor and manage the health of the app through logs/alarms
+- AWS EventBridge for scheduling

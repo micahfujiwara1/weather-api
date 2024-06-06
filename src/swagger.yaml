@@ -1,0 +1,64 @@
+swagger: '2.0'
+info:
+  title: Weather API
+  description: API for weather data and statistics
+  version: "1.0.0"
+host: 'localhost:5000'
+schemes:
+  - http
+paths:
+  /api/weather:
+    get:
+      summary: Retrieve weather data
+      description: |
+        This endpoint retrieves weather data.
+      parameters:
+        - name: page
+          in: query
+          type: integer
+          description: Page number for pagination
+          default: 1
+        - name: per_page
+          in: query
+          type: integer
+          description: Number of items per page for pagination
+          default: 10
+        - name: station_id
+          in: query
+          type: string
+          description: Weather station ID for filtering
+        - name: date
+          in: query
+          type: string
+          format: date
+          description: Date for filtering (YYYY-MM-DD)
+      responses:
+        200:
+          description: Weather data retrieved successfully
+  /api/weather/stats:
+    get:
+      summary: Retrieve weather statistics
+      description: |
+        This endpoint retrieves weather statistics.
+      parameters:
+        - name: page
+          in: query
+          type: integer
+          description: Page number for pagination
+          default: 1
+        - name: per_page
+          in: query
+          type: integer
+          description: Number of items per page for pagination
+          default: 10
+        - name: station_id
+          in: query
+          type: string
+          description: Weather station ID for filtering
+        - name: year
+          in: query
+          type: integer
+          description: Year for filtering
+      responses:
+        200:
+          description: Weather statistics retrieved successfully
