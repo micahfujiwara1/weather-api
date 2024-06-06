@@ -32,12 +32,19 @@ Testing
     └── US_corn_grain_yield.txt
 
 app.py: Main application file containing the Flask application and API endpoints.
+
 ingest_data.py: Script for ingesting weather and yield data, performing data analysis, and storing results in the database.
+
 models.py: SQLAlchemy models for the database.
+
 swagger.yaml: Swagger specification file for API documentation.
+
 test_file.py: Unit tests for the API endpoints.
+
 requirements.txt: List of required Python packages.
+
 wx_data/: Directory containing weather data files.
+
 yld_data/: Directory containing yield data file.
 
 
@@ -51,8 +58,8 @@ pip (Python package installer)
 # Installation
 
 1. Clone the repository:
-git clone https://github.com/micahfujiwara1/weather-data.git
-cd Code-Challenge-Template/src
+git clone https://github.com/micahfujiwara1/weather-api.git
+cd weather-data-api/src
 
 
 2. Install the required packages:

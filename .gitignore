@@ -1,1 +1,3 @@
 weather-data-api/
+src/instance/
+__pycache__/
