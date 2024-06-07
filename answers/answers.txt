@@ -5,13 +5,15 @@
 3. ingest_data.py contains methods that performs data cleansing and analysis as well as pushes the transformed data to my database
 
 4. To utilize the API, navigate to 'http://localhost:5000/apidocs' to see API documentation. 
-   For unit tests, run 'python3 -m unittest test_file.py' in the terminal
+   For unit tests, run 'python -m unittest test_file.py' in the terminal
 
 Extra Credit: 
+For AWS tools, I opted to serverless services as I want to be cost efficient with pay-as-you-go pricing while keeping the product scalable.
+
 Here are the AWS tools I would utilize:
 - AWS API Gateway to deploy my REST API to expose backend HTTP endpoints
 - AWS Lambda to host my code serverlessly
-- AWS Aurora to host my database
+- AWS Aurora Serverless to host my database
 - AWS S3 to house wx_files and yld_files
 - AWS CloudWatch to monitor and manage the health of the app through logs/alarms
-- AWS EventBridge for scheduling
+- AWS Step Functions for scheduling/orchestration

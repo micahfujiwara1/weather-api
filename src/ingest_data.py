@@ -270,9 +270,7 @@ def ingest_data_main():
     start_time = datetime.now()
     wx_df = wx_consolidation(WX_DATA)
     yld_df = yld_consolidation(YLD_DATA)
-    print(wx_df, yld_df)
     wx_analysis_df = weather_analysis(wx_df)
-    print(wx_analysis_df)
     num_wx_records, num_yld_records = push_raw_data(wx_df, yld_df)
     num_analysis_records = push_weather_analysis(wx_analysis_df)
 

@@ -56,17 +56,12 @@ This project is a Flask-based web application that provides an API for accessing
 
 # Running the Application
 
-1. Ensure the SQLite database file (`database.db`) does not exist. If it exists, delete it to start fresh.
-    ```sh
-    rm database.db
-    ```
-
-2. Run the application:
+1. Run the application:
     ```sh
     python app.py
     ```
 
-The application will ingest data, perform analysis, and start the Flask server at [http://localhost:5000](http://localhost:5000).
+The application will ingest data, perform analysis, and start the Flask server at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
 # API Endpoints
 
@@ -94,7 +89,7 @@ Query Parameters:
 Response: JSON object containing weather statistics
 ```
 
-The detailed API documentation can be found at [http://localhost:5000/apidocs](http://localhost:5000/apidocs) (Swagger UI).
+The detailed API documentation can be found at [http://127.0.0.1:5000/apidocs](http://127.0.0.1:5000/apidocs) (Swagger UI).
 
 # Testing
 
