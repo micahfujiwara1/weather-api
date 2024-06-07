@@ -63,7 +63,7 @@ def create_app():
             'per_page': weather_query.per_page,
             'total': weather_query.total,
             'pages': weather_query.pages
-        })
+        }), 200, {'Content-Type': 'application/json'}
 
 
     @app.route('/api/weather/stats', methods=['GET'])
@@ -97,7 +97,7 @@ def create_app():
             'per_page': weather_analysis_query.per_page,
             'total': weather_analysis_query.total,
             'pages': weather_analysis_query.pages
-        })
+        }), 200, {'Content-Type': 'application/json'}
 
 
     return app
