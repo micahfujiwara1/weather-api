@@ -38,8 +38,8 @@ This project is a Flask-based web application that provides an API for accessing
 # Setup
 
 ## Prerequisites
-- Python 3.12+
-- pip (Python package installer)
+- Python3 3.12+
+- pip3 (Python package installer)
 
 ## Installation
 
@@ -51,14 +51,14 @@ This project is a Flask-based web application that provides an API for accessing
 
 2. Install the required packages:
     ```sh
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
 
 # Running the Application
 
 1. Run the application:
     ```sh
-    python app.py
+    python3 app.py
     ```
 
 The application will ingest data, perform analysis, and start the Flask server at [http://127.0.0.1:5000](http://127.0.0.1:5000).
@@ -95,5 +95,5 @@ The detailed API documentation can be found at [http://127.0.0.1:5000/apidocs](h
 
 To run the unit tests:
 ```sh
-python -m unittest test_file.py
+python3 -m unittest test_file.py
 ```
